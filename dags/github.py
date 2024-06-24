@@ -4,7 +4,7 @@ from datetime import datetime
 @dag(
     schedule=None,
     catchup=False,
-    default_args={'retries': 2},
+    default_args={'retries': 1},
     tags=["example"]
 )
 def github():
